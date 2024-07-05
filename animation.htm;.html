@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Box</title>
+    <style>
+        body, html {
+           height: 600px;
+           width: 1150px;
+           margin: 0;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           background-color: #e6bc61;
+}
+
+
+/*.div1 {
+    
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}*/
+
+.div2{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    background-color: #3498db;
+    animation: animateBox 4s ease-in-out infinite;
+    animation-duration: 15s;
+}
+
+@keyframes animateBox {
+    0% {
+        border-radius: 0%;
+        transform: translate(30%, 70%);
+    }
+    25% {
+        border-radius: 50%;
+        transform: translate(70%, 30%);
+    }
+    50% {
+        border-radius: 0%;
+        transform: translate(30%, -70%);
+    }
+    75% {
+        border-radius: 50%;
+        transform: translate(-70%, 30%);
+    }
+    100% {
+        border-radius: 0%;
+        transform: translate(30%, 70%);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+
+    </div>
+        <div class="div2"> 
+            <h1> Welcome to My Website </h1>
+            <p> Creating beautiful animations with CSS </p>
+        </div>
+</body>
+</html>
