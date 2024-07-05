@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <title> Media Queries</title>
+    <style>
+      img{
+        height: 250px;
+        width: 200px;
+      }
+      @media(min-width:550px) and (max-width:768px){
+        img{
+            height: 400px;
+            width: 350px;
+        }
+      }
+      div{
+        display:flex;
+      }
+      
+    </style>
+</head>
+<body>
+    <div>
+        <h1> Media Queries</h1>
+        <img src="cat.png">
+        <img src="baloon.png">
+        <img src="image1.png">
+    </div>
+</body>
+</html>
