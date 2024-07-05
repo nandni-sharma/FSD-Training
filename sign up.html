@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <title> sign up form</title>
+<style>
+  .div1{
+    background-color: rgb(237, 235, 244);
+    width:250px;
+    text-align: center;
+    margin-left: 620px;
+    margin-right: 450px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-bottom: 15px;
+    
+  }
+  h2{
+    color:blueviolet;
+  }
+  p{
+    margin-right: 78px;
+    margin-bottom: -3px;
+    margin-top: 3px;
+  }
+  .sub{
+    background-color: blueviolet;
+    color:antiquewhite;
+    width: 170px;
+  }
+  .style{
+    margin-bottom: 10px;
+  }
+ #dob{
+  width: 170px;
+ }
+</style>
+</head>
+<body>
+        <div class="div1">
+          
+                <h2> Sign Up </h2>
+                <form>
+                        <div><input type="text" class="style" value="       enter your name  " id="name"/><br></div>
+                        <div><input type="password" class="style" value="enter your password" id="password"/> <br></div>
+                        <div><input type="email" class="style" value="email" id="email"/><br></div>
+                        <div><label for="phone"></label>
+                        <input type="tel" class="style" id="phone" value="          phone number" name="phone" required></div>
+                        <p> Date of Birth</p>
+                        <div><label for="dob"></label>
+                        <input type="date" class="style" id="dob" value="dd/mm/yyyy" name="dob" required></div>
+                        <div><label for="tos"><b>I agree to the TOS</b></label>
+                        <input type="checkbox" class="style" id="tos" name="tos" required></div>
+                        <div >
+                          <button type="submit" class="sub">Submit</button>
+                        </div>
+                        <div>Already Signed Up?<a href="login.html">login</a> here</div>
+                </form>
+                
+        </div>
+</body>
+</html>
