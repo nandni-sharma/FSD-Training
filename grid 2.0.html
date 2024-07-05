@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <title>grid</title>
+    <style>
+    .flex{
+        /*background-color: rgb(225, 248, 240);*/
+        height: auto;
+        width: 1290px;
+        /*margin: 20px 20px;*/
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    p{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    a{
+        background-color: black;
+        color:white;
+        width: 100px;
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 3px;
+        box-shadow: 1px 3px 8px black
+    }
+    .grid{
+        /*background-color: bisque;*/
+        height: auto;
+        width: 1290px;
+        /*margin: 20px 20px;*/
+       /* border: 1px solid black;*/
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        column-gap: 20px;
+    }
+   
+    .child1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+    .child2{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .child3{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        text-align: center;  
+    }
+    .child4{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5; 
+    }
+    .child5{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+    img{
+        border-radius: 20px;
+    }
+    button{
+        background-color: black;
+        color:white;
+        width: 100px;
+        padding: 3px;
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 3px;
+        box-shadow: 1px 3px 8px black  
+    }
+    
+    </style>
+</head>
+<body>
+      <div class="flex">
+          <span class="flex" id="left"> 
+            <h1> FASHION </h1>
+          </span>
+          <span class="flex" id="right"> 
+            <p> Home </p>
+            <p> Deals </p>
+            <p> New Arrivals </p>
+            <p> Packages </p>
+            <p> Sign In </p>
+            <p><a href="sign up.html"> Sign Up </a></p>
+          </span>
+      </div>
+    <div class="grid">
+       <div class="child1">
+         <img src="one.png"> 
+       </div>
+       <div class="child2">
+          <img src="pic3.png">
+       </div>
+       <div class="child3">
+           <h1> ULTIMATE <br >SALE </h1>
+             <p>New Collection</p>
+            <button> SHOP NOW </button>
+       </div>
+       <div class="child4">
+           <img src="fashion4.png">
+       </div>
+       <div class="child5">
+          <img src="two.png">
+       </div>
+    </div>
+
+</body>
+</html>
